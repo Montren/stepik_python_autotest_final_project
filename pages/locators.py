@@ -18,4 +18,9 @@ class ProductPageLocators():
     PRICE_OF_BOOK = (By.CSS_SELECTOR, ".col-sm-6.product_main .price_color")
 
 
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    # LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc") Потом удалить если нигде не понадобится (Или раскомментить просто?)
+
+
 
