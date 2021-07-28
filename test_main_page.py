@@ -29,7 +29,3 @@ def test_guest_cant_see_product_in_basket_opened_from_main_page(browser):
     basket_page = BasketPage(browser, browser.current_url)
     basket_page.should_not_be_items_in_basket()
     basket_page.should_be_message_of_empty_basket()
-
-
-
-
