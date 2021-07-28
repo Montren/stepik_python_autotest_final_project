@@ -1,8 +1,9 @@
 from selenium.webdriver.common.by import By
 
 
-class MainPageLocators():
-    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+# class MainPageLocators():
+    # LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+
 
 
 class LoginPageLocators():
@@ -21,6 +22,12 @@ class ProductPageLocators():
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     # LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc") Потом удалить если нигде не понадобится (Или раскомментить просто?)
+    BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-group .btn.btn-default")
+
+
+class BasketPageLocators:
+    BASKET_ITEMS = (By.CSS_SELECTOR, ".basket-items")
+    MESSAGE_EMPTY_BASKET = (By.CSS_SELECTOR, "#content_inner > p")
 
 
 
